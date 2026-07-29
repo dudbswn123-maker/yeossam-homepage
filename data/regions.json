@@ -1,0 +1,122 @@
+[
+  {
+    "code": "43",
+    "sido": "충청북도",
+    "sigungu": null,
+    "eupmyeondong": null,
+    "ri": null,
+    "fullName": "충청북도",
+    "slug": "chungbuk",
+    "active": true,
+    "level": "sido",
+    "parentCode": null
+  },
+  {
+    "code": "43113",
+    "sido": "충청북도",
+    "sigungu": "청주시 흥덕구",
+    "eupmyeondong": null,
+    "ri": null,
+    "fullName": "충청북도 청주시 흥덕구",
+    "slug": "chungbuk-cheongju-heungdeok",
+    "active": true,
+    "level": "sigungu",
+    "parentCode": "43"
+  },
+  {
+    "code": "43113330",
+    "sido": "충청북도",
+    "sigungu": "청주시 흥덕구",
+    "eupmyeondong": "옥산면",
+    "ri": null,
+    "fullName": "충청북도 청주시 흥덕구 옥산면",
+    "slug": "chungbuk-cheongju-heungdeok-oksanmyeon",
+    "active": true,
+    "level": "eupmyeondong",
+    "parentCode": "43113"
+  },
+  {
+    "code": "4311333021",
+    "sido": "충청북도",
+    "sigungu": "청주시 흥덕구",
+    "eupmyeondong": "옥산면",
+    "ri": "오산리",
+    "fullName": "충청북도 청주시 흥덕구 옥산면 오산리",
+    "slug": "chungbuk-cheongju-heungdeok-oksanmyeon-osanri",
+    "active": true,
+    "level": "ri",
+    "parentCode": "43113330"
+  },
+  {
+    "code": "41",
+    "sido": "경기도",
+    "sigungu": null,
+    "eupmyeondong": null,
+    "ri": null,
+    "fullName": "경기도",
+    "slug": "gyeonggi",
+    "active": true,
+    "level": "sido",
+    "parentCode": null
+  },
+  {
+    "code": "41117",
+    "sido": "경기도",
+    "sigungu": "수원시 영통구",
+    "eupmyeondong": null,
+    "ri": null,
+    "fullName": "경기도 수원시 영통구",
+    "slug": "gyeonggi-suwon-yeongtong",
+    "active": true,
+    "level": "sigungu",
+    "parentCode": "41"
+  },
+  {
+    "code": "41117101",
+    "sido": "경기도",
+    "sigungu": "수원시 영통구",
+    "eupmyeondong": "영통동",
+    "ri": null,
+    "fullName": "경기도 수원시 영통구 영통동",
+    "slug": "gyeonggi-suwon-yeongtong-yeongtongdong",
+    "active": true,
+    "level": "eupmyeondong",
+    "parentCode": "41117"
+  },
+  {
+    "code": "51",
+    "sido": "강원특별자치도",
+    "sigungu": null,
+    "eupmyeondong": null,
+    "ri": null,
+    "fullName": "강원특별자치도",
+    "slug": "gangwon",
+    "active": true,
+    "level": "sido",
+    "parentCode": null
+  },
+  {
+    "code": "51150",
+    "sido": "강원특별자치도",
+    "sigungu": "강릉시",
+    "eupmyeondong": null,
+    "ri": null,
+    "fullName": "강원특별자치도 강릉시",
+    "slug": "gangwon-gangneung",
+    "active": true,
+    "level": "sigungu",
+    "parentCode": "51"
+  },
+  {
+    "code": "51150102",
+    "sido": "강원특별자치도",
+    "sigungu": "강릉시",
+    "eupmyeondong": "교동",
+    "ri": null,
+    "fullName": "강원특별자치도 강릉시 교동",
+    "slug": "gangwon-gangneung-gyodong",
+    "active": true,
+    "level": "eupmyeondong",
+    "parentCode": "51150"
+  }
+]
