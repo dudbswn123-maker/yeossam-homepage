@@ -24,7 +24,7 @@ export function HeroSection() {
             <h1 className="mt-6 text-balance font-serif text-4xl font-black leading-tight tracking-tight md:text-5xl lg:text-6xl">
               초등 · 중등 · 고등
               <br />
-              <span className="text-accent">1:1 맞춤수업</span>
+              <span className="text-accent">방문과외 · 화상과외 1:1 맞춤수업</span>
             </h1>
           </Reveal>
 
