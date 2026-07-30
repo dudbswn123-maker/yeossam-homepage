@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   alternates: { canonical: '/' },
   openGraph: {
     title: '여쌤과외 | 전국 방문과외 · 화상과외',
-    description: '초·중·고 학생별 1:1 맞춤수업과 내신 대비, 학습관리.',
+    description: '전국 방문과외와 화상과외를 운영하며 초등, 중등, 고등 영어·수학·국어·과학·사회 1:1 맞춤수업과 내신 대비를 진행합니다.',
     type: 'website',
     locale: 'ko_KR',
     url: '/',
