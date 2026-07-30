@@ -45,6 +45,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className={`${notoSansKR.variable} ${notoSerifKR.variable} bg-background`}>
+      <head>
+        <meta name="naver-site-verification" content="ad6a4299aaed55cf51f99ad0338d5204dee06786" />
+       </head>
       <body className="font-sans antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
