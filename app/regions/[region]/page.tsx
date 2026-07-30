@@ -127,7 +127,7 @@ export default async function RegionPage({ params }: PageProps) {
               </span>
 
               <h1 className="mt-4 text-balance font-serif text-4xl font-black leading-tight tracking-tight text-foreground md:text-5xl">
-                {regionName} 1:1 맞춤 과외
+                {regionName} 영어과외 수학과외 중등 과학과외
               </h1>
               <p className="mt-5 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
                 {provinceName} {regionName} 학생을 위한 여쌤과외입니다. 초·중·고 주요 과목을 학생별 수준에 맞춰
