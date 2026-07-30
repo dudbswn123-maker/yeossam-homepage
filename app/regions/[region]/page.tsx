@@ -76,7 +76,7 @@ export default async function RegionPage({ params }: PageProps) {
     },
     {
       q: '선생님은 어떻게 매칭되나요?',
-      a: `${regionName} 학생의 성향, 학습 수준, 목표를 상담을 통해 파악한 뒤 가장 적합한 검증된 선생님을 직접 매칭해 드립니다.`,
+      a: `${regionName} 학생의 성향, 학습 수준, 목표를 상담을 통해 파악한 뒤 학생의 조건과 수업 목표에 맞는 선생님을 안내해 드립니다.`,
     },
     {
       q: '수업료와 상담은 어떻게 진행되나요?',
@@ -129,7 +129,7 @@ export default async function RegionPage({ params }: PageProps) {
                 {regionName} 1:1 맞춤 과외
               </h1>
               <p className="mt-5 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
-                {provinceName} {regionName} 학생을 위한 여쌤과외입니다. 초·중·고 전 과목, 검증된 선생님이
+                {provinceName} {regionName} 학생을 위한 여쌤과외입니다. 초·중·고 주요 과목을 학생별 수준에 맞춰
                 방문 또는 화상 수업으로 {regionName} 학생 한 명 한 명의 성적 향상을 책임집니다.
               </p>
 

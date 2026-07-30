@@ -6,6 +6,7 @@ import { SubjectsSection } from '@/components/subjects-section'
 import { LearningProcess } from '@/components/learning-process'
 import { RegionsSection } from '@/components/regions-section'
 import { ContactSection } from '@/components/contact-section'
+import { FaqSection } from '@/components/faq-section'
 import { SiteFooter } from '@/components/site-footer'
 
 export default function Page() {
@@ -19,6 +20,7 @@ export default function Page() {
         <SubjectsSection />
         <LearningProcess />
         <RegionsSection />
+        <FaqSection />
         <ContactSection />
       </main>
       <SiteFooter />

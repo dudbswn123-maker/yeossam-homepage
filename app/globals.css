@@ -158,3 +158,12 @@
 @utility animate-float {
   animation: float-slow 6s ease-in-out infinite;
 }
+
+@layer base {
+  ::selection {
+    background: color-mix(in oklab, var(--accent) 35%, transparent);
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}

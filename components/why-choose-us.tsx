@@ -34,7 +34,7 @@ export function WhyChooseUs() {
             여쌤과외를 선택하는 이유
           </h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-            단순한 지식 전달이 아닌, 학생 스스로 공부하는 힘을 길러주는 프리미엄 과외 시스템입니다.
+            학생의 학년과 현재 수준을 기준으로 수업 방향을 정하고, 진도·과제·오답을 꾸준히 관리합니다.
           </p>
         </Reveal>
 

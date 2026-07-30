@@ -1,11 +1,13 @@
 import { GraduationCap, Phone } from 'lucide-react'
 
 const links = [
-  { label: '왜 여쌤과외', href: '#why' },
-  { label: '학년별 과정', href: '#programs' },
-  { label: '과목', href: '#subjects' },
-  { label: '수업 과정', href: '#process' },
-  { label: '상담문의', href: '#contact' },
+  { label: '왜 여쌤과외', href: '/#why' },
+  { label: '학년별 과정', href: '/#programs' },
+  { label: '과목', href: '/#subjects' },
+  { label: '수업 과정', href: '/#process' },
+  { label: '지역별 과외', href: '/regions' },
+  { label: '자주 묻는 질문', href: '/#faq' },
+  { label: '상담문의', href: '/#contact' },
 ]
 
 export function SiteFooter() {

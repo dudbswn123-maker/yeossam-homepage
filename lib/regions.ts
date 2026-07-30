@@ -151,7 +151,7 @@ export const SITE_URL = (
 ).replace(/\/$/, '')
 
 export function regionUrl(slug: string): string {
-  return `${SITE_URL}/region/${slug}`
+  return `${SITE_URL}/regions/${slug}`
 }
 
 /**

@@ -30,7 +30,7 @@ export function HeroSection() {
 
           <Reveal delay={160}>
             <p className="mx-auto mt-6 max-w-lg text-pretty text-base leading-relaxed text-primary-foreground/75 md:text-lg lg:mx-0">
-              학생 한 명 한 명의 수준과 목표에 맞춘 정밀 커리큘럼으로 성적 향상을 만듭니다. 검증된 선생님과 함께하세요.
+              학생의 현재 수준과 목표를 먼저 확인하고, 과목별 취약점과 학습 속도에 맞춘 1:1 수업 계획을 안내합니다.
             </p>
           </Reveal>
 
@@ -86,8 +86,8 @@ export function HeroSection() {
                 <CheckCircle2 className="size-6" />
               </span>
               <div>
-                <p className="text-lg font-black leading-none">98%</p>
-                <p className="mt-1 text-xs text-muted-foreground">수업 만족도</p>
+                <p className="text-base font-black leading-none">학생별 맞춤</p>
+                <p className="mt-1 text-xs text-muted-foreground">진도·과제·오답 관리</p>
               </div>
             </div>
           </div>

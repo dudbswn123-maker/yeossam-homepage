@@ -9,6 +9,7 @@ const navItems = [
   { label: '학년별 과정', href: '/#programs' },
   { label: '과목', href: '/#subjects' },
   { label: '지역별 과외', href: '/regions' },
+  { label: '자주 묻는 질문', href: '/#faq' },
   { label: '상담문의', href: '/#contact' },
 ]
 
