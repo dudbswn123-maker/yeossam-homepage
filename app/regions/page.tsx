@@ -34,11 +34,11 @@ export default function RegionsPage() {
                 <span className="font-medium text-foreground">지역별 과외</span>
               </nav>
               <h1 className="mt-5 text-balance font-serif text-4xl font-black tracking-tight text-foreground md:text-5xl">
-                전국 지역별 과외
+                전국 지역별 영어과외 · 수학과외 · 과학과외
               </h1>
               <p className="mt-5 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
-                여쌤과외는 전국 17개 시·도, {totalRegionCount}개 지역에서 초·중·고 학생을 위한 1:1 맞춤 과외를
-                제공합니다. 원하시는 지역을 선택하면 해당 지역 전용 안내 페이지로 이동합니다.
+                여쌤과외는 전국 17개 시·도, {totalRegionCount}개 지역에서 초등·중등·고등 영어과외, 수학과외,
+                국어·과학·사회 1:1 맞춤수업을 안내합니다. 원하는 지역을 선택해 방문과외와 화상과외 정보를 확인하세요.
               </p>
               <a
                 href="tel:010-3028-0877"

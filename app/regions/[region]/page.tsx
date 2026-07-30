@@ -14,7 +14,7 @@ import {
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import { Reveal } from '@/components/reveal'
-import { allRegions, getRegionBySlug } from '@/lib/regions'
+import { allRegions, getNearbyRegions, getRegionBySlug } from '@/lib/regions'
 
 interface PageProps {
   params: Promise<{ region: string }>
@@ -32,8 +32,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const regionName = data.ri ?? data.eupmyeondong ?? data.sigungu ?? data.sido
-  const title = `${data.sido} ${regionName} 과외 | 1:1 맞춤 방문·화상 과외 - 여쌤과외`
-  const description = `${data.fullName} 지역 초·중·고 1:1 맞춤 과외. 영어·수학·국어·과학·사회 전 과목, 학생별 학습 수준과 목표에 맞춘 방문·화상 수업을 안내합니다. 무료 상담 010-3028-0877.`
+  const title = `${regionName} 영어과외 수학과외 | 초등 중등 고등 1:1 맞춤수업 - 여쌤과외`
+  const description = `${data.fullName} 초등·중등·고등 영어과외, 수학과외, 국어·과학·사회 1:1 맞춤수업 안내. 내신 대비와 시험 대비, 방문과외·화상과외 상담을 진행합니다.`
 
   return {
     title,
@@ -64,6 +64,7 @@ export default async function RegionPage({ params }: PageProps) {
 
   const regionName = data.ri ?? data.eupmyeondong ?? data.sigungu ?? data.sido
   const provinceName = data.sido
+  const nearbyRegions = getNearbyRegions(data, 8)
 
   const faqs = [
     {
@@ -200,6 +201,85 @@ export default async function RegionPage({ params }: PageProps) {
             </Reveal>
           </div>
         </section>
+
+        {/* Regional SEO guide */}
+        <section className="border-y border-border bg-background py-16 md:py-24">
+          <div className="mx-auto max-w-5xl px-4 md:px-6">
+            <Reveal className="max-w-3xl">
+              <span className="text-sm font-bold uppercase tracking-widest text-accent">Local Guide</span>
+              <h2 className="mt-3 text-balance font-serif text-3xl font-black tracking-tight text-foreground md:text-4xl">
+                {regionName} 영어과외 · 수학과외 · 과학과외 안내
+              </h2>
+              <div className="mt-6 space-y-5 text-pretty leading-8 text-muted-foreground">
+                <p>
+                  {provinceName} {regionName} 과외는 학생의 학년, 현재 성적, 공부 습관과 목표를 먼저
+                  확인한 뒤 수업 방향을 정합니다. 초등학생은 기초 개념과 학습 습관을, 중학생은
+                  학교별 내신 대비와 시험 준비를, 고등학생은 내신과 수능 목표에 맞춘 개념 학습과
+                  문제 풀이를 중심으로 관리합니다.
+                </p>
+                <p>
+                  {regionName} 영어과외는 어휘·문법·독해와 학교 시험 범위를 학생 수준에 맞춰
+                  지도합니다. {regionName} 수학과외는 부족한 개념을 찾아 보완하고 풀이 과정을
+                  점검해 반복되는 실수와 오답을 줄입니다. 국어, 과학, 사회 과목도 취약 단원과
+                  시험 일정에 맞춰 1:1로 진행할 수 있습니다.
+                </p>
+                <p>
+                  방문수업 가능 여부는 학생의 위치와 희망 일정에 따라 상담 후 안내합니다. 이동이
+                  어렵거나 일정 조율이 필요한 경우에는 실시간 화상과외로 수업할 수 있습니다.
+                  상담 시 학년, 과목, 목표, 희망 시간대를 알려주시면 적합한 수업 방향을 안내합니다.
+                </p>
+              </div>
+            </Reveal>
+
+            <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {[
+                `${regionName} 초등 기초 학습`,
+                `${regionName} 중등 내신 대비`,
+                `${regionName} 고등 내신·수능 대비`,
+                `${regionName} 방문·화상 과외`,
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="flex items-center gap-2 rounded-xl border border-border bg-secondary px-4 py-3 text-sm font-semibold text-foreground"
+                >
+                  <CheckCircle2 className="size-4 shrink-0 text-accent" />
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Nearby regions */}
+        {nearbyRegions.length > 0 && (
+          <section className="py-16 md:py-20">
+            <div className="mx-auto max-w-5xl px-4 md:px-6">
+              <Reveal>
+                <h2 className="font-serif text-2xl font-black tracking-tight text-foreground md:text-3xl">
+                  {regionName} 인근 지역 과외 안내
+                </h2>
+                <p className="mt-3 text-muted-foreground">
+                  가까운 지역의 1:1 방문과외와 화상과외 안내도 함께 확인해 보세요.
+                </p>
+                <div className="mt-6 flex flex-wrap gap-2.5">
+                  {nearbyRegions.map((nearby) => {
+                    const nearbyName = nearby.ri ?? nearby.eupmyeondong ?? nearby.sigungu ?? nearby.sido
+                    return (
+                      <Link
+                        key={nearby.code}
+                        href={`/regions/${nearby.slug}`}
+                        className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold text-foreground transition-colors hover:border-primary/40 hover:text-primary"
+                      >
+                        {nearbyName} 과외
+                        <ChevronRight className="size-4" />
+                      </Link>
+                    )
+                  })}
+                </div>
+              </Reveal>
+            </div>
+          </section>
+        )}
 
         {/* FAQ */}
         <section className="bg-secondary py-16 md:py-24">
