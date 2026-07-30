@@ -147,7 +147,7 @@ export function getActiveRegionCount(): number {
 }
 
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? 'https://yeossam-gwaoe.example.com'
+  process.env.NEXT_PUBLIC_SITE_URL ?? 'https://yeossam-homepage.vercel.app'
 ).replace(/\/$/, '')
 
 export function regionUrl(slug: string): string {
